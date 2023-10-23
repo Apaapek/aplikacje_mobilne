@@ -1,0 +1,41 @@
+Po pierwszym uruchomieniu aplikacji:
+2023-10-23 19:48:21.578 16331-16331/? D/testy: onCreate()
+2023-10-23 19:48:21.688 16331-16331/? D/testy: onStart()
+2023-10-23 19:48:21.689 16331-16331/? D/testy: onResume()
+
+Po wciśnięciu przycisku Cofnij:
+2023-10-23 19:50:25.040 16331-16331/pb.quiz D/testy: onPause()
+2023-10-23 19:50:25.814 16331-16331/pb.quiz D/testy: onStop()
+2023-10-23 19:50:25.815 16331-16331/pb.quiz D/testy: onDestroy()
+
+Po ponownym uruchomieniu aplikacji:
+2023-10-23 19:50:46.968 16331-16331/pb.quiz D/testy: onCreate()
+2023-10-23 19:50:46.988 16331-16331/pb.quiz D/testy: onStart()
+2023-10-23 19:50:46.989 16331-16331/pb.quiz D/testy: onResume()
+
+Po wciśnięciu przycisku ekranu głównego Home:
+2023-10-23 19:51:18.898 16331-16331/pb.quiz D/testy: onPause()
+2023-10-23 19:51:19.672 16331-16331/pb.quiz D/testy: onStop()
+
+Po powrocie do aplikacji z listy ostatnio używanych aplikacji:
+2023-10-23 19:51:53.847 16331-16331/pb.quiz D/testy: onStart()
+2023-10-23 19:51:53.847 16331-16331/pb.quiz D/testy: onResume()
+
+Po obróceniu aplikacji wróciła ona do pierwszego pytania.
+Po obróceniu telefonu i aplikacji:
+2023-10-23 19:53:34.572 16331-16331/pb.quiz D/testy: onPause()
+2023-10-23 19:53:34.574 16331-16331/pb.quiz D/testy: onStop()
+2023-10-23 19:53:34.575 16331-16331/pb.quiz D/testy: onDestroy()
+2023-10-23 19:53:34.588 16331-16331/pb.quiz D/testy: onCreate()
+2023-10-23 19:53:34.614 16331-16331/pb.quiz D/testy: onStart()
+2023-10-23 19:53:34.615 16331-16331/pb.quiz D/testy: onResume()
+
+Po zmianach w kodzie aplikacja po obróceniu ekranu pozostaje na tym samym pytaniu.
+Po zmianach w kodzie - logi po obróceniu telefonu i aplikacji:
+2023-10-23 20:05:05.919 17105-17105/pb.quiz D/testy: onPause()
+2023-10-23 20:05:05.921 17105-17105/pb.quiz D/testy: onStop()
+2023-10-23 20:05:05.922 17105-17105/pb.quiz D/testy: onSaveInstanceState()
+2023-10-23 20:05:05.922 17105-17105/pb.quiz D/testy: onDestroy()
+2023-10-23 20:05:05.936 17105-17105/pb.quiz D/testy: onCreate()
+2023-10-23 20:05:05.965 17105-17105/pb.quiz D/testy: onStart()
+2023-10-23 20:05:05.965 17105-17105/pb.quiz D/testy: onResume()

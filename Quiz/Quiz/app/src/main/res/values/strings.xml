@@ -12,4 +12,5 @@
 
     <string name="correct_answer">Poprawna odpowiedź</string>
     <string name="incorrect_answer">Niepoprawna odpowiedź</string>
+    <string name="answer_was_shown">Odpowiedź niezaliczona</string>
 </resources>
