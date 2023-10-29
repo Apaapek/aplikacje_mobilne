@@ -1,14 +1,14 @@
 
-L
-java:S1611~"/Remove the parentheses around the "v" parameter(ÒÑŞ8ŠÏ§îµ1
 J
 java:S1604i"(Make this anonymous inner class a lambda(Üà¨¯üÿÿÿÿ8¨†Ø¢´1
 E
 java:S1604o"(Make this anonymous inner class a lambda(éäó‚8¨†Ø¢´1
 X	java:S110"<This class has 9 parents which is greater than 5 authorized.(²Ú±8¨†Ø¢´1
-f
-java:S18741"JDon't override a deprecated method or explicitly mark it as "@Deprecated".(¹Î¾8·œğµ1
-J
-java:S1604u"(Make this anonymous inner class a lambda(ÈŒèâüÿÿÿÿ8¨†Ø¢´1
 \
 java:S1874‚">Remove this use of "startActivityForResult"; it is deprecated.(îü‰”8Š±‚ğµ1
+L
+java:S1611~"/Remove the parentheses around the "v" parameter(ÒÑŞ8ŠÏ§îµ1
+J
+java:S1604u"(Make this anonymous inner class a lambda(ÈŒèâüÿÿÿÿ8¨†Ø¢´1
+f
+java:S18741"JDon't override a deprecated method or explicitly mark it as "@Deprecated".(¹Î¾8·œğµ1
