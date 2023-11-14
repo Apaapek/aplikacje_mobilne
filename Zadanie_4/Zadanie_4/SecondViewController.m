@@ -1,3 +1,11 @@
+//
+//  SecondViewController.m
+//  zadanie4
+//
+//  Created by student on 31/10/2023.
+//  Copyright © 2023 pb. All rights reserved.
+//
+
 #import "SecondViewController.h"
 
 @interface SecondViewController ()
@@ -6,12 +14,10 @@
 
 @implementation SecondViewController
 
-- (void) viewDidLoad {
+- (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
     self.modifiedSurnameTextField.text = self.surname;
 }
-
 - (IBAction) back {
     NSString *itemToPassBack = self.modifiedSurnameTextField.text;
     [self.delegate addItemViewController:self didFinishEnteringItem:itemToPassBack];
