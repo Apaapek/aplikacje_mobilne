@@ -21,12 +21,15 @@ import java.util.UUID;
 public class TaskFragment extends Fragment {
     private static final String ARG_TASK_ID = "TaskFragment.taskId";
     private Task task;
+    private EditText nameField;
+    private Button dateButton;
+    private CheckBox doneCheckBox;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        UUID taskId = (UUID) getArguments().getSerializable(ARG_TASK_ID);
+        UUID taskId = (UUID)getArguments().getSerializable(ARG_TASK_ID);
         task = TaskStorage.getInstance().getTask(taskId);
     }
 
@@ -35,7 +38,7 @@ public class TaskFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_task, container, false);
 
-        EditText nameField = view.findViewById(R.id.task_name);
+        nameField = view.findViewById(R.id.task_name);
         nameField.setText(task.getName());
         nameField.addTextChangedListener(new TextWatcher() {
             @Override
@@ -50,19 +53,15 @@ public class TaskFragment extends Fragment {
             public void afterTextChanged(Editable s) { }
         });
 
-        Button dateButton = view.findViewById(R.id.task_date);
+        dateButton = view.findViewById(R.id.task_date);
         dateButton.setText(task.getDate().toString());
         dateButton.setEnabled(false);
 
-        CheckBox doneCheckBox = view.findViewById(R.id.task_done);
+        doneCheckBox = view.findViewById(R.id.task_done);
         doneCheckBox.setChecked(task.isDone());
-        doneCheckBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                task.setDone(isChecked);
-            }
+        doneCheckBox.setOnCheckedChangeListener((buttonView, isChecked) -> {
+            task.setDone(isChecked);
         });
-
         return view;
     }
 
