@@ -5,6 +5,6 @@ d
 java:S1128"BRemove this unused import 'androidx.fragment.app.FragmentManager'.(¯­ë‹ýÿÿÿÿ8‰Ê½ç·1
 ^
 java:S1874"<Remove this use of "getSerializableExtra"; it is deprecated.(þåÕüÿÿÿÿ8Í¹§é·1
+Y	java:S110"=This class has 10 parents which is greater than 5 authorized.(ÓÔ§þ8Í¹§é·1
 b
 java:S1128"ERemove this unused import 'androidx.appcompat.app.AppCompatActivity'.(€¶£î8¥Æç·1
-Y	java:S110"=This class has 10 parents which is greater than 5 authorized.(ÓÔ§þ8Í¹§é·1

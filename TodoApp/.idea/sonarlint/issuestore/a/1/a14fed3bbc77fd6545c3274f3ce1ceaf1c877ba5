@@ -1,9 +1,15 @@
 
-Y
-java:S1874"7Remove this use of "getSerializable"; it is deprecated.(½‚°½ıÿÿÿÿ8Ÿÿ¼é·1
-E
-java:S1604;"(Make this anonymous inner class a lambda(ôå‡ÿ8Ÿÿ¼é·1
-
-java:S11862"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(íÑíÍ8Ÿÿ¼é·1
+}
+java:S1450"[Remove the "doneCheckBox" field and declare it as a local variable in the relevant methods.(§¨âŸıÿÿÿÿ8áæ¥Ç¾1
+N
+java:S1602N",Remove useless curly braces around statement(ìÑÔÿÿÿÿÿ8øåúÈ¾1
+W
+java:S1128":Remove this unused import 'android.widget.CompoundButton'.(®½¤Ş8Æ®¨Ç¾1
 
-java:S1186*"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ô—½48Ÿÿ¼é·1
+java:S11863"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ô—½48Ÿÿ¼é·1
+
+java:S1186;"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(íÑíÍ8Ÿÿ¼é·1
+z
+java:S1450"XRemove the "nameField" field and declare it as a local variable in the relevant methods.(âê¸şÿÿÿÿ8¬¥¢Ç¾1
+Y
+java:S1874&"7Remove this use of "getSerializable"; it is deprecated.(½‚°½ıÿÿÿÿ8Ÿÿ¼é·1

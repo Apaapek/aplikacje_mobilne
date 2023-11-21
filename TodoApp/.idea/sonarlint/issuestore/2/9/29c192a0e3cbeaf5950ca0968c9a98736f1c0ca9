@@ -1,3 +1,4 @@
 
-b
-java:S1117"@Rename "recyclerView" which hides the field declared at line 21.(ò×ÃÇÿÿÿÿÿ8öÉÌé·1
+R
+java:S1128
+"5Remove this unused import 'android.widget.Checkable'.(šáÏ8º«ùÇ¾1

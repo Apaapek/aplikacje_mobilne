@@ -21,3 +21,7 @@ b
 2app/src/main/java/pb/todoapp/TaskListActivity.java,5\7\57bdb3a0ed843f1a9a6cd9091a2ef1a911071851
 P
  app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
+Z
+*app/src/main/java/pb/todoapp/Category.java,9\b\9b07f8946402be7ed9299118476b62942905bea1
+A
+gradle.properties,2\a\2afbb999f001938c88fa43fc2ef52abf0f8213e4

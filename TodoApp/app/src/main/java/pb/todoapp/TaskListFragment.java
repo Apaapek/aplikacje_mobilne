@@ -1,10 +1,14 @@
 package pb.todoapp;
 
 import android.content.Intent;
+import android.graphics.Paint;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CheckBox;
+import android.widget.Checkable;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -51,6 +55,8 @@ public class TaskListFragment extends Fragment {
         private TextView nameTextView;
         private TextView dateTextView;
         private Task task;
+        private ImageView iconImageView;
+        private CheckBox doneCheckBox;
 
         public TaskHolder(LayoutInflater inflater, ViewGroup parent) {
             super(inflater.inflate(R.layout.list_item_task, parent, false));
@@ -58,12 +64,25 @@ public class TaskListFragment extends Fragment {
 
             nameTextView = itemView.findViewById(R.id.task_item_name);
             dateTextView = itemView.findViewById(R.id.task_item_date);
+            doneCheckBox = itemView.findViewById(R.id.checkBox);
+            iconImageView = itemView.findViewById(R.id.task_icon_view);
         }
 
         public void bind(Task task) {
             this.task = task;
             nameTextView.setText(task.getName());
+            if (task.isDone()) {
+                nameTextView.setPaintFlags(nameTextView.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
+            } else {
+                nameTextView.setPaintFlags(nameTextView.getPaintFlags() & ~Paint.STRIKE_THRU_TEXT_FLAG);
+            }
             dateTextView.setText(task.getDate().toString());
+            if (task.getCategory().equals(Category.HOME)) {
+                iconImageView.setImageResource(R.drawable.ic_house);
+            } else {
+                iconImageView.setImageResource(R.drawable.ic_school);
+            }
+            doneCheckBox.setChecked(task.isDone());
         }
 
         @Override
@@ -71,6 +90,11 @@ public class TaskListFragment extends Fragment {
             Intent intent = new Intent(getActivity(), MainActivity.class);
             intent.putExtra(KEY_EXTRA_TASK_ID, task.getId());
             startActivity(intent);
+        }
+
+
+        public CheckBox getCheckBox() {
+            return doneCheckBox;
         }
     }
 
@@ -92,6 +116,10 @@ public class TaskListFragment extends Fragment {
         public void onBindViewHolder(@NonNull TaskHolder holder, int position) {
             Task task = tasks.get(position);
             holder.bind(task);
+            CheckBox checkBox = holder.getCheckBox();
+            checkBox.setChecked(tasks.get(position).isDone());
+            checkBox.setOnCheckedChangeListener((buttonView, isChecked) ->
+                    tasks.get(holder.getBindingAdapterPosition()).setDone(isChecked));
         }
 
         @Override
