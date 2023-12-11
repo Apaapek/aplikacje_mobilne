@@ -1,0 +1,47 @@
+
+n
+java:S1301™"KReplace this "switch" statement by "if" statements to increase readability.(ãÁğ™øÿÿÿÿ8åŒ½ÌÅ1
+>
+java:S1659u"!Declare "upY" on a separate line.(½”ÿ8åŒ½ÌÅ1
+o
+java:S1450u"RRemove the "upX" field and declare it as a local variable in the relevant methods.(½”ÿ8åŒ½ÌÅ1
+D	java:S131™""Add a default case to this switch.(ãÁğ™øÿÿÿÿ8åŒ½ÌÅ1
+„
+java:S3252a"gUse static access with "com.google.android.material.snackbar.BaseTransientBottomBar" for "LENGTH_LONG".(“ì”œ8ÁõÔËÅ1
+@
+java:S1659u"#Declare "downY" on a separate line.(½”ÿ8åŒ½ÌÅ1
+>
+java:S1659u"!Declare "upX" on a separate line.(½”ÿ8åŒ½ÌÅ1
+O
+java:S1128"3Remove this unused import 'android.view.DragEvent'.(÷ŒÚS8Ü«¤ÌÅ1
+`
+java:S1874>">Remove this use of "startActivityForResult"; it is deprecated.(ëÖƒ øÿÿÿÿ8ˆ€ßÊÅ1
+‰
+java:S3252k"gUse static access with "com.google.android.material.snackbar.BaseTransientBottomBar" for "LENGTH_LONG".(§›âŞşÿÿÿÿ8ÇãËÅ1
+„
+java:S3252h"gUse static access with "com.google.android.material.snackbar.BaseTransientBottomBar" for "LENGTH_LONG".(Û¬š8ïìŞËÅ1
+G
+java:S18741"*Remove this use of "of"; it is deprecated.(Ÿ€Ò8çğÉÅ1
+o
+java:S1450u"RRemove the "upY" field and declare it as a local variable in the relevant methods.(½”ÿ8åŒ½ÌÅ1
+R
+java:S1066¤"/Merge this if statement with the enclosing one.(»Œö§şÿÿÿÿ8åŒ½ÌÅ1
+l
+java:S1874Z"JDon't override a deprecated method or explicitly mark it as "@Deprecated".(ÉÎÍïıÿÿÿÿ8ˆ€ßÊÅ1
+\
+java:S1874">Remove this use of "startActivityForResult"; it is deprecated.(Ìêò‹8À„ğËÅ1
+X	java:S110 "<This class has 9 parents which is greater than 5 authorized.(²Ú±8õôóÈÅ1
+…
+java:S3252¥"gUse static access with "com.google.android.material.snackbar.BaseTransientBottomBar" for "LENGTH_LONG".(½ûõ¬8åŒ½ÌÅ1
+J
+java:S1604:"(Make this anonymous inner class a lambda(“«ì×ıÿÿÿÿ8ï»ÜÊÅ1
+O
+java:S1128"-Remove this unused import 'org.w3c.dom.Text'.(¶Äè‹şÿÿÿÿ8‘İÂÉÅ1
+J
+java:S16042"(Make this anonymous inner class a lambda(ÇÎáæşÿÿÿÿ8¨¨ÌËÅ1
+W
+java:S18741":Remove this use of "ViewModelProviders"; it is deprecated.(Ÿ€Ò8çğÉÅ1
+`
+java:S1128">Remove this unused import 'androidx.appcompat.widget.Toolbar'.(ÔËûİùÿÿÿÿ8ÁøâÉÅ1
+…
+java:S3252“"gUse static access with "com.google.android.material.snackbar.BaseTransientBottomBar" for "LENGTH_LONG".(Ó¿èÌ8éêÄÌÅ1
