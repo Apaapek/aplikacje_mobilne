@@ -121,6 +121,7 @@ public class MainActivity extends AppCompatActivity {
             super(inflater.inflate(R.layout.book_list_item, parent, false));
             itemView.setOnClickListener(this);
             itemView.setOnLongClickListener(this);
+//            itemView.setOnTouchListener(this);
 
             bookTitleTextView = itemView.findViewById(R.id.book_title);
             bookAuthorTextView = itemView.findViewById(R.id.book_author);
